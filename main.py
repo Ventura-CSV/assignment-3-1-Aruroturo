@@ -8,7 +8,12 @@ def main():
     min_value = number1
    # Simple manipulation of Definitions to caculate the last min_value
     if min_value < number2 and min_value < number3:
-     print(f'{number1} {number2} {number3}' )
+        min_value = min_value
+    elif number2 < number3 and number2 < min_value:
+        min_value = number2
+    else:
+        min_value = number3
+    print(f'{number1} {number2} {number3}' )
     print(min_value)
     """
     ########################################
