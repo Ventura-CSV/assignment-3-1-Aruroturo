@@ -7,11 +7,8 @@ def main():
     number3 = random.randint(0, 100)
     min_value = number1
    # Simple manipulation of Definitions to caculate the last min_value
-    if number2 <= min_value:
-        min_value <= number2
-        if number3 <= min_value:
-            min_value = number3
-    print(f'{number1} {number2} {number3}' )
+    if min_value < number2 and min_value < number3:
+     print(f'{number1} {number2} {number3}' )
     print(min_value)
     """
     ########################################
